@@ -21,6 +21,7 @@
       map: ["base"]
   - type: Tag
     tags:
+    - Sheet
     - SheetTungsten
   - type: Item
     heldPrefix: sheettungsten
