@@ -151,7 +151,7 @@
   - WeaponDisabler
   - WeaponDisablerSMG
 
-# DS14 Soyuz-start
+# DS14-Soyuz-start
 - type: latheRecipePack
   id: SecurityAmmoTungsten
   recipes:
@@ -164,4 +164,4 @@
   - MagazineRifleTungsten
   - MagazinePistolSubMachineGunTungsten
   - MagazinePistolTungsten
-# DS14 Soyuz-end
+# DS14-Soyuz-end
