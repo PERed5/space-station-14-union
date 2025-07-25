@@ -710,7 +710,7 @@
     Plasma: 500
     Glass: 500
 
-# DS14 Soyuz-start
+# DS14-Soyuz-start
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazinePistolTungsten
@@ -787,4 +787,4 @@
   materials:
     Plastic: 500
     SheetTungsten: 500
-# DS14 Soyuz-end
+# DS14-Soyuz-end
