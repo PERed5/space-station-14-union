@@ -156,6 +156,7 @@
         whitelist:
           tags:
             - MagazineLightRifleAsVal
+            - MagazineLightRifleVSS
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
@@ -214,6 +215,7 @@
         whitelist:
           tags:
             - MagazineLightRifleVSS
+            - MagazineLightRifleAsVal
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber

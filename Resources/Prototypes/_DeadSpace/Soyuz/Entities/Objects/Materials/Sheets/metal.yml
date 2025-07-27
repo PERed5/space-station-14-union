@@ -20,9 +20,6 @@
     layers:
     - state: tungsten_3
       map: ["base"]
-  - type: Tag
-    tags:
-    - Sheet
   - type: Item
     heldPrefix: sheettungsten
   - type: Appearance

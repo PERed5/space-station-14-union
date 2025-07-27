@@ -153,6 +153,11 @@
 
 # DS14-Soyuz-start
 - type: latheRecipePack
+  id: ArmedTechFabCircuitboard
+  recipes:
+  - ArmedTechFabCircuitboard
+
+- type: latheRecipePack
   id: SecurityAmmoTungsten
   recipes:
   - MagazineBoxRifleTungsten
@@ -165,6 +170,7 @@
   - MagazinePistolSubMachineGunTungsten
   - MagazinePistolTungsten
   - MagazineLightRifleVSSTungsten
+  - MagazineLightRifleAsValTungsten
 
 - type: latheRecipePack
   id: SecurityMagazine
@@ -179,4 +185,45 @@
   - MagazineLightRifleVSSPractice
   - MagazineLightRifleVSSUranium
   - MagazineLightRifleVSSIncendiary
+
+- type: latheRecipePack
+  id: PosketDefenseWeaponry
+  recipes:
+  - WeaponPistolMk58
+  - WeaponRevolverPython
+
+- type: latheRecipePack
+  id: BallisticsShotguns
+  recipes:
+  - WeaponShotgunKammerer
+  - WeaponShotgunEnforcer
+
+- type: latheRecipePack
+  id: BallisticsAutomaticWeapons
+  recipes:
+  - WeaponRifleAk
+  - WeaponSubMachineGunDrozd
+
+- type: latheRecipePack
+  id: AdvancedBallisticsShotguns
+  recipes:
+  - WeaponShotgunSaiga
+
+- type: latheRecipePack
+  id: AdvancedBallisticsAutomaticWeapons
+  recipes:
+  - WeaponRifleAKMCY
+  - WeaponRifleAsVal
+  - WeaponRifleVSS
+
+- type: latheRecipePack
+  id: AdvancedSecurityMagazine
+  recipes:
+  - MagazineRifleASH
+  - MagazineRifleASHEmpty
+
+- type: latheRecipePack
+  id: BallisticsLargeCaliberWeapons
+  recipes:
+  - WeaponRifleASH12
 # DS14-Soyuz-end

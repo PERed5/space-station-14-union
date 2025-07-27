@@ -604,10 +604,3 @@
   parent: BaseCircuitboardRecipe
   id: HolopadMachineCircuitboard
   result: HolopadMachineCircuitboard
-
-# DS14-Soyuz-start
-- type: latheRecipe
-  parent: BaseGoldCircuitboardRecipe
-  id: ArmedTechFabCircuitboard
-  result: ArmedTechFabCircuitboard
-# DS14-Soyuz-end

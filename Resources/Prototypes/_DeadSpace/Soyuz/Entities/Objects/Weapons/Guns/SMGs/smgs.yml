@@ -1,6 +1,6 @@
 - type: entity
   name: ПП-91-01 "Кедр-Б"
-  parent: [BaseWeaponSubMachineGun, BaseRestrictedContraband]
+  parent: [BaseWeaponSubMachineGun, BaseSecurityContraband]
   id: WeaponSubMachineGunKedr
   description: Пистолет-пулемёт с интегрированным глушителем, разработанный в начале 2690-х годов под калибр 9х19 по заказу НКВБ СССП для специальных структур.
   components:

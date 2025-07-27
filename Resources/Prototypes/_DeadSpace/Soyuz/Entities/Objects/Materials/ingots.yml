@@ -24,9 +24,6 @@
     heldPrefix: tungsten
   - type: Appearance
   - type: Extractable
-  - type: Tag
-    tags:
-    - IngotTungsten
     grindableSolutionName: tungstenore
   - type: SolutionContainerManager
     solutions:

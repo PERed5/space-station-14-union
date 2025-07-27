@@ -88,3 +88,11 @@ ert-loadout-category-pulsepistol-name = Импульсный пистолет
 ert-loadout-category-pulsepistol-description =
     Новейший энергетический пистолет военного класса.
     Для восполнения боезапаса потребуется зарядник энергооружия.
+ert-loadout-category-kedr-name = ПП-91-01 "Кедр-Б"
+ert-loadout-category-kedr-description =
+    Пистолет-пулемёт с интегрированным глушителем, разработанный в начале 2690-х годов по заказу НКВБ СССП для специальных структур.
+    Использует патроны калибра 9х19 мм.
+ert-loadout-category-saiga-name = Сайга-12
+ert-loadout-category-saiga-description =
+    Автодробовик созданый для спецназа СССП.
+    Использует магазин под патроны калибра 12х70.

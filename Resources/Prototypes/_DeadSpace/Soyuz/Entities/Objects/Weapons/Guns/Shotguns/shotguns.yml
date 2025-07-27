@@ -1,6 +1,6 @@
 - type: entity
-  name: Сайга 12
-  parent: [BaseItem, BaseGunWieldable]
+  name: Сайга-12
+  parent: [BaseItem, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponShotgunSaiga
   description: Автодробовик созданый для спецназа СССП.
   suffix: Сайга

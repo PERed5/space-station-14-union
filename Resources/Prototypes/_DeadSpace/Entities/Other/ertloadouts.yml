@@ -89,6 +89,7 @@
     - KammererSet
     - DrozdSet
     - LaserCarbineSet
+    - KedrSet
   - type: ActivatableUI
     key: enum.ThiefBackpackUIKey.Key
   - type: UserInterface
@@ -355,6 +356,19 @@
   - MagazineRifle
   - MagazineBoxRifle
 
+- type: thiefBackpackSet
+  id: KedrSet
+  name: ert-loadout-category-kedr-name
+  description: ert-loadout-category-kedr-description
+  sprite:
+    sprite: _DeadSpace/Soyuz/Objects/Weapons/Guns/SMGs/pp91.rsi
+    state: icon
+  content:
+  - WeaponSubMachineGunKedr
+  - MagazinePistolSubMachineGun
+  - MagazinePistolSubMachineGun
+  - MagazinePistolSubMachineGun
+  - MagazineBoxPistol
 ### Лазеры
 - type: thiefBackpackSet
   id: LaserCarbineSet
