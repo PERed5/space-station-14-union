@@ -252,6 +252,7 @@
   materials:
     Cotton: 200 #my pyrocloth keeps catching on fire whenever I make it!
 
+- type: latheRecipe
   id: IngotTungsten1
   result: IngotTungsten1
   completetime: 0
