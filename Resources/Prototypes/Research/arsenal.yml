@@ -238,6 +238,7 @@
   name: research-technology-pistols
   icon:
     sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
+  recipeUnlocks:    
   - WeaponPistolMk58
   - WeaponRevolverPython
 
