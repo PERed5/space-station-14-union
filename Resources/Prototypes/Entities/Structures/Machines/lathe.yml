@@ -411,6 +411,14 @@
     - SecurityAmmo
     - SecurityWeapons
     - SecurityDisablers
+    - BallisticsLargeCaliberWeapons
+    - AdvancedSecurityMagazine
+    - SecurityMagazine
+    - AdvancedBallisticsAutomaticWeapons
+    - AdvancedBallisticsShotguns
+    - BallisticsAutomaticWeapons
+    - BallisticsShotguns
+    - PosketDefenseWeaponry
     - ArmedTechFabCircuitboard # DS14-Soyuz
   - type: MaterialStorage
     whitelist:
@@ -448,6 +456,9 @@
       runningState: icon
       staticPacks:
       - SecurityAmmoStatic
+      - AdvancedSecurityMagazine
+      - SecurityMagazine
+      - SecurityAmmoTungsten
     - type: MaterialStorage
       whitelist:
         tags:
