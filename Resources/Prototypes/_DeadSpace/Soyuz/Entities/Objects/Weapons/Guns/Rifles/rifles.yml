@@ -14,7 +14,7 @@
   - type: Clothing
     sprite: _DeadSpace/Soyuz/Objects/Weapons/Guns/Rifles/ash.rsi
   - type: Gun
-    fireRate: 5
+    fireRate: 4.5
     soundGunshot:
       path: /Audio/_DeadSpace/Souyz/Weapons/Guns/Gunshots/ash12.ogg
       params:
