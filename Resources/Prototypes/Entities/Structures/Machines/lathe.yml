@@ -401,22 +401,22 @@
     - SecurityPracticeStatic
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
-    - SecurityAmmo
-    - SecurityWeapons
-    - SecurityDisablers
-    - BallisticsLargeCaliberWeapons
-    - PosketDefenseWeaponry    
+    - SecurityAmmo # DS14-Soyuz
+    - SecurityWeapons # DS14-Soyuz
+    - SecurityDisablers # DS14-Soyuz
+    - BallisticsLargeCaliberWeapons # DS14-Soyuz
+    - PosketDefenseWeaponry # DS14-Soyuz
     - SecurityBorgModulesStatic # DS14
     dynamicPacks:
     - SalvageSecurityBoards
-    - AdvancedSecurityMagazine
+    - AdvancedSecurityMagazine # DS14-Soyuz
     - SalvageSecurityWeapons
     - SecurityEquipment
-    - SecurityMagazine
-    - BallisticsAutomaticWeapons
-    - BallisticsShotguns    
-    - AdvancedBallisticsAutomaticWeapons
-    - AdvancedBallisticsShotguns
+    - SecurityMagazine # DS14-Soyuz
+    - BallisticsAutomaticWeapons # DS14-Soyuz
+    - BallisticsShotguns # DS14-Soyuz   
+    - AdvancedBallisticsAutomaticWeapons # DS14-Soyuz
+    - AdvancedBallisticsShotguns # DS14-Soyuz
     - SecurityBoards
     - SecurityExplosives
     - ArmedTechFabCircuitboard # DS14-Soyuz
@@ -430,6 +430,7 @@
   - type: LatheAnnouncing
     channels: [Security]
 
+# DS14-Soyuz-start
 - type: entity
   id: AmmoTechFab
   parent: BaseLatheLube
@@ -466,6 +467,7 @@
           - RawMaterial
           - Ingot
     - type: OreSiloClient
+# DS14-Soyuz-end
 
 - type: entity
   id: MedicalTechFab
