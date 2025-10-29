@@ -430,6 +430,7 @@
   - MagazineRifle
   - MagazineBoxRifle
 
+# DS14-Soyuz-start
 - type: thiefBackpackSet
   id: KedrSet
   name: ert-loadout-category-kedr-name
@@ -443,6 +444,7 @@
   - MagazinePistolSubMachineGun
   - MagazinePistolSubMachineGun
   - MagazineBoxPistol
+# DS14-Soyuz-end
 
 - type: thiefBackpackSet
   id: MinigunGunSet
