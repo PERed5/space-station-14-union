@@ -51,7 +51,7 @@
 - type: entity
   id: MagazineRifleASHEmpty
   name: магазин АШ-12 (.45 магнум любые)
-  suffix: empty
+  suffix: Пустой
   parent: BaseMagazineRifleASH
   components:
   - type: BallisticAmmoProvider

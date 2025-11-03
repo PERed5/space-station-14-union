@@ -17,7 +17,6 @@
   parent: BaseMagazineBoxMagnum
   id: MagazineBoxMagnumTungsten
   name: коробка патронов (.45 магнум ППБС)
-  description: A cardboard box of .45 magnum rounds. Intended to hold non-harmful chalk ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumTungsten

@@ -23,17 +23,17 @@
     idleState: icon
     runningState: icon
     dynamicPacks:
-    - SecurityAmmoTungsten # DS14-Soyuz
-    - ProcessingTungsten # DS14-Soyuz
-    - BallisticsShotguns # DS14-Soyuz
-    - BallisticsAutomaticWeapons # DS14-Soyuz
-    - SecurityMagazine # DS14-Soyuz
-    - AdvancedBallisticsShotguns # DS14-Soyuz
-    - AdvancedBallisticsAutomaticWeapons # DS14-Soyuz
-    - AdvancedSecurityMagazine # DS14-Soyuz
-    - BallisticsLargeCaliberWeapons # DS14-Soyuz
-    - PosketDefenseWeaponry # DS14-Soyuz
-    - AdvancedShotgunMagazine # DS14-Soyuz
+    - SecurityAmmoTungsten 
+    - ProcessingTungsten 
+    - BallisticsShotguns 
+    - BallisticsAutomaticWeapons 
+    - SecurityMagazine 
+    - AdvancedBallisticsShotguns 
+    - AdvancedBallisticsAutomaticWeapons 
+    - AdvancedSecurityMagazine 
+    - BallisticsLargeCaliberWeapons 
+    - PosketDefenseWeaponry 
+    - AdvancedShotgunMagazine 
     - AdvancedRiotControl
   - type: MaterialStorage
     whitelist:

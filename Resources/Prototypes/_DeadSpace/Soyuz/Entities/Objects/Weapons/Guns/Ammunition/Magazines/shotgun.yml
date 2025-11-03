@@ -88,7 +88,7 @@
 - type: entity
   id: MagazineShotgunNewEmpty
   name: магазин для сайга-12 (12х70 любые)
-  suffix: empty
+  suffix: Пустой
   parent: MagazineShotgunNew
   components:
   - type: BallisticAmmoProvider
@@ -131,7 +131,7 @@
 - type: entity
   id: MagazineShotgunDrumEmpty
   name: барабан для сайга-12 (12х70 любые)
-  suffix: empty
+  suffix: Пустой
   parent: MagazineShotgunDrum
   components:
   - type: BallisticAmmoProvider

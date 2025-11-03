@@ -51,7 +51,7 @@
 - type: entity
   id: MagazineLightRifleVSSEmpty
   name: магазин для ВСС "Винторез" (7.62х39 мм винтовочные любые)
-  suffix: empty
+  suffix: Пустой
   parent: MagazineLightRifleVSS
   components:
   - type: BallisticAmmoProvider

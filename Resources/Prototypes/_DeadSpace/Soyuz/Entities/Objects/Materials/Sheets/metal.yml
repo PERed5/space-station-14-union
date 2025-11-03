@@ -1,8 +1,8 @@
 - type: entity
   parent: SheetMetalBase
   id: SheetTungsten
-  name: sheet tungsten
-  suffix: Full
+  name: лист вольфрама
+  suffix: Полный
   components:
   - type: Material
   - type: PhysicalComposition
@@ -40,7 +40,6 @@
 - type: entity
   parent: SheetTungsten
   id: SheetTungsten10
-  name: sheet tungsten
   suffix: 10
   components:
   - type: Sprite
@@ -52,19 +51,10 @@
 - type: entity
   parent: SheetTungsten
   id: SheetTungsten1
-  name: sheet tungsten
-  suffix: Single
+  suffix: Один
   components:
   - type: Sprite
     state: tungsten
   - type: Stack
     stackType: SheetTungsten
     count: 1
-
-- type: entity
-  parent: SheetTungsten
-  id: SheetTungstenLingering0
-  suffix: Lingering, 0
-  components:
-  - type: Stack
-    count: 0

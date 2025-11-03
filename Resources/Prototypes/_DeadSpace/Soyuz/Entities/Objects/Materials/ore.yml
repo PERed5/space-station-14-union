@@ -1,8 +1,8 @@
 - type: entity
   parent: OreBase
   id: TungstenOre
-  name: Tungsten ore
-  suffix: Full
+  name: руда вольфрама
+  suffix: Полный
   components:
   - type: Stack
     stackType: TungstenOre
@@ -28,7 +28,7 @@
 - type: entity
   id: TungstenOre1
   parent: TungstenOre
-  suffix: Single
+  suffix: Один
   components:
     - type: Stack
       count: 1

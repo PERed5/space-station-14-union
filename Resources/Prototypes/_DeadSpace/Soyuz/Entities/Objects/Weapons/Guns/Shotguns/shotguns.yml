@@ -64,7 +64,7 @@
   parent: [BaseItem, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponShotgunSaigaM
   description: Автодробовик созданый для спецназа СССП.
-  suffix: Сайга
+  suffix: Дробовик
   components:
   - type: Sprite
     sprite: _DeadSpace/Soyuz/Objects/Weapons/Guns/Shotguns/saigam.rsi

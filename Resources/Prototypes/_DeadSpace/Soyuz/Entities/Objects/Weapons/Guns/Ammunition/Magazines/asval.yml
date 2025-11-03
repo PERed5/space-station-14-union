@@ -51,7 +51,7 @@
 - type: entity
   id: MagazineLightRifleAsValEmpty
   name: магазин для АС "Вал" (7.62х39 мм винтовочные любые)
-  suffix: empty
+  suffix: Пустой
   parent: MagazineLightRifleAsVal
   components:
   - type: BallisticAmmoProvider

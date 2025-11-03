@@ -1,8 +1,8 @@
 - type: entity
   parent: IngotBase
   id: IngotTungsten
-  name: tungsten bar
-  suffix: Full
+  name: слиток вольфрама
+  suffix: Полный
   components:
   - type: Material
   - type: PhysicalComposition
@@ -37,8 +37,7 @@
 - type: entity
   parent: IngotTungsten
   id: IngotTungsten1
-  name: tungsten bar
-  suffix: Single
+  suffix: Один
   components:
   - type: Sprite
     state: tungsten
