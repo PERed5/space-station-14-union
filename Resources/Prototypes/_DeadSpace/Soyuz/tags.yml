@@ -9,3 +9,14 @@
 
 - type: Tag
   id: MagazineShotgunSaiga
+
+  id: PoliceBetaBody
+
+- type: Tag
+  id: PoliceBetaComp
+
+- type: Tag
+  id: PoliceBetaHead
+
+- type: Tag
+  id: PoliceBetaLegs
