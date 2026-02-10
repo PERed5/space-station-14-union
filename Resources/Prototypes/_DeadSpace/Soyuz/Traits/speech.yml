@@ -1,8 +1,8 @@
 - type: trait
-  id: PirateAccent
-  name: Акцент дореформенного языка
-  description: Акцент имперского Ордена Квирина.
+  id: kvirinAccent
+  name: trait-kvirin-accent-name
+  description: trait-kvirin-accent-desc
   category: SpeechTraits
   cost: 2
   components:
-  - type: kvirinAccent
+  - type: KvirinAccent
