@@ -61,6 +61,12 @@
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+    # DS14-Start
+    - type: Skill
+      group: BlueShield
+    # DS14-End
 
 - type: startingGear
   id: BlueShieldOfficerGear
@@ -87,13 +93,13 @@
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
        !type:String
-       pda-ert
+       pda-okgb
   - type: PdaBorderColor
     borderColor: "#12445b"
     accentHColor: "#772d32"
-    accentVColor: "#772d32"
+    accentVColor: "#772d31"
   - type: Icon
-    state: pda-ert
+    state: pda-okgb
   - type: HealthAnalyzer
     scanDelay: 1
 
@@ -103,8 +109,8 @@
   components:
     - type: Sprite
       layers:
-        - state: default
-        - state: ert_security
+        - state: NKVBCard
+        - state: idokgb
     - type: PresetIdCard
       job: BlueShieldOfficer
 
