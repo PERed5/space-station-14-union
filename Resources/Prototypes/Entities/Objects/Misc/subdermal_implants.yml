@@ -98,6 +98,14 @@
     - type: StationLimitedNetwork
     - type: WirelessNetworkConnection
       range: 500
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Alive
+      - Critical
+      - Dead
+    - type: RattleOnTrigger
+      targetUser: true
+      radioChannel: Medical
 
 #Traitor implants
 
