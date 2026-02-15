@@ -123768,7 +123768,7 @@ entities:
     - type: Transform
       pos: 3.5,28.5
       parent: 2
-- proto: LockerMime
+- proto: LockerMimeFilled
   entities:
   - uid: 10529
     components:
@@ -147517,7 +147517,7 @@ entities:
     - type: Transform
       pos: -13.5,19.5
       parent: 2
-- proto: SpawnPointSeniorSalvageSpecialist
+- proto: SpawnPointSeniorCourier
   entities:
   - uid: 18373
     components:
@@ -148660,13 +148660,13 @@ entities:
     - type: Transform
       pos: -19.5,74.5
       parent: 2
-- proto: SuitStorageSeniorSalvageSpecialistFilled
-  entities:
-  - uid: 18522
-    components:
-    - type: Transform
-      pos: -36.5,28.5
-      parent: 2
+# - proto: SuitStorageSeniorSalvageSpecialistFilled
+#   entities:
+#   - uid: 18522
+#     components:
+#     - type: Transform
+#       pos: -36.5,28.5
+#       parent: 2
 - proto: SuitStorageWarden
   entities:
   - uid: 18523

@@ -134648,7 +134648,7 @@ entities:
     - type: Transform
       pos: -17.5,28.5
       parent: 2
-- proto: SpawnPointSeniorSalvageSpecialist
+- proto: SpawnPointSeniorCourier
   entities:
   - uid: 17401
     components:
@@ -135604,13 +135604,13 @@ entities:
     - type: Transform
       pos: -19.5,74.5
       parent: 2
-- proto: SuitStorageSeniorSalvageSpecialistFilled
-  entities:
-  - uid: 17545
-    components:
-    - type: Transform
-      pos: -36.5,28.5
-      parent: 2
+# - proto: SuitStorageSeniorSalvageSpecialistFilled
+#   entities:
+#   - uid: 17545
+#     components:
+#     - type: Transform
+#       pos: -36.5,28.5
+#       parent: 2
 - proto: SuperSynthesizerInstrument
   entities:
   - uid: 17546
