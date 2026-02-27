@@ -42,62 +42,51 @@ jobs:
           echo "PR_NUMBER=${{ github.event.pull_request.number }}" >> $GITHUB_ENV
 
       - name: Parse PR description and update changelog
+        id: parse_step
+        env:
+          DESCRIPTION_B64: ${{ steps.extract.outputs.DESCRIPTION_B64 }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
           python <<'EOF'
           import yaml
           import re
           import os
           from datetime import datetime, timezone
-          import sys
-          import logging
+          import base64
 
-          logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
-          logger = logging.getLogger(__name__)
+          desc_b64 = os.environ.get("DESCRIPTION_B64", "")
+          desc = base64.b64decode(desc_b64).decode("utf-8", errors="replace")
+          author = os.environ.get("AUTHOR", "")
+          pr = os.environ.get("PR_NUMBER", "")
 
-          CHANGELOG = "Resources/Changelog/ChangelogDS14Soyuz.yml"
+          desc_no_comments = re.sub(r'<!--.*?-->', '', desc, flags=re.DOTALL)
 
-          desc = os.environ.get("DESCRIPTION", "")
-          author = os.environ.get("AUTHOR", "unknown")
-          pr = os.environ.get("PR_NUMBER", "0")
+          if ':v:' in desc_no_comments:
+              CHANGELOG = "Resources/Changelog/ChangelogDS14Soyuz.yml"
+          else:
+              CHANGELOG = "Resources/Changelog/ChangelogDS14.yml"
 
-          logger.info(f"Processing PR #{pr} from {author}")
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f"selected_file={CHANGELOG}\n")
 
-          if not desc:
-              logger.error("PR description is empty")
-              sys.exit(1)
-
-          desc = re.sub(r'<!--.*?-->', '', desc, flags=re.DOTALL)
           if ":cl:" not in desc:
               logger.info("No :cl: found — skipping")
               sys.exit(0)
 
-          sections = {
-              "Добавлено": "Add",
-              "Удалено": "Remove",
-              "Изменено": "Tweak",
-              "Исправлено": "Fix",
-          }
-
+          sections = {"Добавлено": "Add", "Удалено": "Remove", "Изменено": "Tweak", "Исправлено": "Fix"}
           changes = []
           found_sections = False
 
           for title, type_key in sections.items():
-              pattern = rf"- ?\*?{title}\*?:?\s*(.*?)(?=\n-|$)"
-              matches = re.findall(pattern, desc, flags=re.DOTALL | re.IGNORECASE)
-
-              for match in matches:
-                  if match.strip():
-                      found_sections = True
-                      lines = [line.strip('- *').strip() for line in match.split('\n') if line.strip()]
-                      message = ' '.join(lines)
-                      message = re.sub(r'\s+', ' ', message).strip()
-
-                      if message and len(message) > 2:
-                          changes.append({
-                              "type": type_key,
-                              "message": message
-                          })
-                          logger.info(f"Found change: {type_key} - {message}")
+              pattern = rf"- {title}:\s*(.*?)(?=\n- [^:]|$)"
+              for block in re.findall(pattern, desc, flags=re.DOTALL):
+                  lines = [l.strip("- ").strip() for l in block.splitlines() if l.strip()]
+                  if not lines: continue
+                  message = " ".join(lines)
+                  message = re.sub(r"\s+", " ", message).strip()
+                  if message:
+                      changes.append({"type": type_key, "message": message})
 
           if not changes:
               if found_sections:
@@ -123,39 +112,21 @@ jobs:
               logger.error(f"Unexpected error: {e}")
               data = {}
 
-          if "Entries" not in data:
-              data["Entries"] = []
-
-          entries = data["Entries"]
+          entries = data.get("Entries", [])
           last_id = max((e.get("id", 0) for e in entries), default=0)
-
-          new_entry = {
+          entries.append({
               "id": last_id + 1,
               "author": author,
               "time": datetime.now(timezone.utc).isoformat(),
               "pr": int(pr),
               "changes": changes
-          }
+          })
+          data["Entries"] = entries
 
-          entries.append(new_entry)
-          logger.info(f"Added entry #{last_id + 1} with {len(changes)} changes")
+          with open(CHANGELOG, "w", encoding="utf-8") as f:
+              yaml.dump(data, f, allow_unicode=True, sort_keys=False, indent=2)
 
-          try:
-              with open(CHANGELOG, "w", encoding="utf-8") as f:
-                  yaml.dump(
-                      data,
-                      f,
-                      allow_unicode=True,
-                      sort_keys=False,
-                      indent=2,
-                      default_flow_style=False,
-                      width=1000
-                  )
-              logger.info("Changelog saved successfully")
-          except Exception as e:
-              logger.error(f"Error saving changelog: {e}")
-              sys.exit(1)
-
+          print(f"Changelog обновлён: {CHANGELOG}")
           EOF
         env:
           DESCRIPTION: ${{ env.DESCRIPTION }}
@@ -167,11 +138,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if [ -f "Resources/Changelog/ChangelogDS14Soyuz.yml" ]; then
-            git add Resources/Changelog/ChangelogDS14Soyuz.yml
-          else
-            echo "Changelog file not found!"
-            exit 1
+          SELECTED_FILE="${{ steps.parse_step.outputs.selected_file }}"
+
+          if [ -n "$SELECTED_FILE" ]; then
+            git add "$SELECTED_FILE"
           fi
 
           if git diff --cached --quiet; then
