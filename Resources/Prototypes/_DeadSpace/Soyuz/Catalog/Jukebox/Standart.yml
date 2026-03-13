@@ -47,7 +47,7 @@
     path: /Audio/_DeadSpace/Soyuz/Jukebox/ICouldDrinkTheSea.ogg
 
 - type: jukebox
-  id: Bi2Shambala
+  id: BiShambala
   name: Би2 - Шамбала
   path:
-    path: /Audio/_DeadSpace/Soyuz/Jukebox/Bi2Shambala.ogg
+    path: /Audio/_DeadSpace/Soyuz/Jukebox/BiShambala.ogg
