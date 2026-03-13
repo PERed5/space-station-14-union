@@ -22,7 +22,10 @@ public sealed partial class CloningPodComponent : Component
     [ViewVariables]
     public float CloningProgress = 0;
 
-    [ViewVariables]
+    /// <summary> DS14
+    /// How much biomass does it require. DS14
+    /// </summary> DS14
+    [DataField] // DS14
     public int UsedBiomass = 70;
 
     [ViewVariables]
