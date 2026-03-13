@@ -17,10 +17,10 @@
     path: /Audio/_DeadSpace/Soyuz/Jukebox/DajjteTankSmeshno.ogg
 
 - type: jukebox
-  id: MarkBernesDarnkNight
+  id: MarkBernesDarkNight
   name: Тёмная ночь
   path:
-    path: /Audio/_DeadSpace/Soyuz/Jukebox/MarkBernesDarnkNight.ogg
+    path: /Audio/_DeadSpace/Soyuz/Jukebox/MarkBernesDarkNight.ogg
 
 - type: jukebox
   id: NirvanaSomethingInTheWay
