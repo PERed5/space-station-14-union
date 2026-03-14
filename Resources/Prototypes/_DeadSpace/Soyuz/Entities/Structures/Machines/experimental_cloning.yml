@@ -55,7 +55,7 @@
     - Biomass
   - type: WiresPanel
   - type: ApcPowerReceiver
-    powerLoad: 200 #Receives most of its power from the console
+    powerLoad: 200
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -86,7 +86,7 @@
     - type: Sprite
       state: medical
     - type: MachineBoard
-      prototype: CloningPod
+      prototype: CloningPodExperimental
       stackRequirements:
         Manipulator: 5
         Glass: 2
