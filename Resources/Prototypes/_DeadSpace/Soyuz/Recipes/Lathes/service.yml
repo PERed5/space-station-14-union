@@ -5,11 +5,11 @@
   materials:
     Steel: 1234
     Glass: 5678
-    Gold: 9012
+    Gold: 8012
     Silver: 3456
     Plastic: 7890
     Plasma: 2345
-    Uranium: 6789
+    Uranium: 1789
 
 - type: latheRecipe
   id: CloningConsoleComputerCircuitboardSoyuz
@@ -21,8 +21,8 @@
     Gold: 8024
     Silver: 5791
     Plastic: 6803
-    Plasma: 9136
-    Uranium: 3579
+    Plasma: 8136
+    Uranium: 1579
 
 - type: latheRecipe
   id: ExperimentalCloningPodMachineCircuitboard
@@ -34,5 +34,5 @@
     Gold: 7346
     Silver: 8153
     Plastic: 6370
-    Plasma: 9084
-    Uranium: 3615
+    Plasma: 8084
+    Uranium: 2615
