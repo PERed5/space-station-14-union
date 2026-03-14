@@ -3,36 +3,36 @@
   result: MedicalScannerMachineCircuitboard
   completetime: 5
   materials:
-    Steel: 500
-    Glass: 500
-    Gold: 500
-    Silver: 500
-    Plastic: 500
-    Plasma: 500
-    Uranium: 500
+  Steel: 1234
+  Glass: 5678
+  Gold: 9012
+  Silver: 3456
+  Plastic: 7890
+  Plasma: 2345
+  Uranium: 6789
 
 - type: latheRecipe
   id: CloningConsoleComputerCircuitboardSoyuz
   result: CloningConsoleComputerCircuitboard
   completetime: 5
   materials:
-    Steel: 500
-    Glass: 500
-    Gold: 500
-    Silver: 500
-    Plastic: 500
-    Plasma: 500
-    Uranium: 500
+  Steel: 1357
+  Glass: 2468
+  Gold: 8024
+  Silver: 5791
+  Plastic: 6803
+  Plasma: 9136
+  Uranium: 3579
 
 - type: latheRecipe
   id: ExperimentalCloningPodMachineCircuitboard
   result: ExperimentalCloningPodMachineCircuitboard
   completetime: 5
   materials:
-    Steel: 500
-    Glass: 500
-    Gold: 500
-    Silver: 500
-    Plastic: 500
-    Plasma: 500
-    Uranium: 500
+  Steel: 4782
+  Glass: 5291
+  Gold: 7346
+  Silver: 8153
+  Plastic: 6370
+  Plasma: 9084
+  Uranium: 3615
